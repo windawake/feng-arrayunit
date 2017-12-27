@@ -1,5 +1,7 @@
 # 把数组转化成拥有数组特性的对象
 
+`composer require feng/arrayunit dev-master`
+
 案例代码
 
 ```php
