@@ -19,12 +19,14 @@ require 'vendor/autoload.php';
      ],
  ];
 
- $std = new Collection($arr);
+ $std = new Feng\Arrayunit\Collection($arr);
  var_dump($std->lesson->one);
  var_dump($std->teacher->toArray());
+ //新增属性赋值
  $std->lesson->three = 'math';
  var_dump($std->lesson->four);
  var_dump($std['lesson']);
+ //混合对象和数组
  var_dump($std->lesson['one']);
  //测试循环
  foreach ($std as $item) {
